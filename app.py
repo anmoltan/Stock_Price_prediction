@@ -33,8 +33,6 @@ plt.plot(ma200, 'g')
 plt.plot(df.Close, 'b')
 st.pyplot(fig)
 
-
-
 #training process starts
 
 df1=df.reset_index()['Close']
@@ -103,7 +101,7 @@ x_input=test_data[len(test_data)-100:].reshape(1,-1)
 temp_input=list(x_input)
 temp_input=temp_input[0].tolist()
 
-# demonstrate prediction for next 10 days
+# demonstrate prediction for next 30 days
 #from numpy import array
 
 lst_output=[]
