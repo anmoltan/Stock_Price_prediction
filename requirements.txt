@@ -2,5 +2,5 @@ numpy
 pandas  
 matplotlib
 pandas_datareader 
-streamlit
+streamlit==1.22.0
 keras
