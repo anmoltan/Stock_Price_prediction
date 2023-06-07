@@ -3,7 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 import pandas_datareader.data as pdr
-from keras.models import load_model
+
+import tensorflow as tf
+
+
 import streamlit as st
 import yfinance as yf
 
@@ -68,7 +71,8 @@ X_train =X_train.reshape(X_train.shape[0],X_train.shape[1] , 1)
 X_test = X_test.reshape(X_test.shape[0],X_test.shape[1] , 1)
 
 #loading the model
-model= load_model('my_model.h5')
+model = tf.keras.models.load_model('C:\Users\anmol\OneDrive\Desktop\New folder\stock prediction\my_model.h5')
+
 
 #training proces ends
 
