@@ -21,7 +21,7 @@ user_input = st.text_input('Enter Stock Ticker','AAPL')
 df = pdr.get_data_yahoo(user_input,start,end)
 
 #describe data
-st.subheader('data from 2010-2022')
+st.subheader('Data from 2010-2022')
 st.write(df.describe())
 
 
@@ -73,7 +73,7 @@ X_test = X_test.reshape(X_test.shape[0],X_test.shape[1] , 1)
 #loading the model
 model = tf.keras.models.load_model(r'my_model.h5')
 
-
+ 
 #training proces ends
 
 #testing process starts
@@ -86,6 +86,9 @@ test_predict=scaler.inverse_transform(test_predict)
 
 original_ytrain = scaler.inverse_transform(y_train.reshape(-1,1)) 
 original_ytest = scaler.inverse_transform(ytest.reshape(-1,1))
+
+st.subheader('LSTM Results')
+
 
 ### Plotting 
 train= data[:training_size]
