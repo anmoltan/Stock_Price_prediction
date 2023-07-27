@@ -16,7 +16,8 @@ Step 2: Clone this repo open in IDE.
 Step 3: Open the terminal in this repo only.                           
 Step 4: Run the requirements.txt file to install all the necessary modules.                       
                                                        pip install -r requirements.txt                            
-Step 5: At last, run the app2.py file.                                           
-         streamlit run app2.py
+Step 5: At last, run the app1.py file using below command:                                       
+         streamlit run app1.py
+
 
   now you will see an interactive interface where you can predict the stock price of any company just by entering the stock ticker.
